@@ -1,0 +1,21 @@
+//
+//  AirPortBcmWiFiDriver.iig
+//  AirPortBcmWiFiDriver
+//
+//  Created by wanglws on 2025/3/15.
+//
+
+#ifndef AirPortBcmWiFiDriver_h
+#define AirPortBcmWiFiDriver_h
+
+#include <Availability.h>
+#include <DriverKit/IOService.iig>
+
+class AirPortBcmWiFiDriver: public IOService
+{
+public:
+    virtual kern_return_t
+    Start(IOService * provider) override;
+};
+
+#endif /* AirPortBcmWiFiDriver_h */
